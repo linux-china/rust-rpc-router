@@ -112,3 +112,10 @@ impl Router {
 		}
 	}
 }
+
+impl Router {
+	/// contains handler or not
+	pub fn contains(&self, name: &str) -> bool {
+		self.inner.contains(name)
+	}
+}

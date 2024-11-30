@@ -24,6 +24,11 @@ impl RouterBuilder {
 		self
 	}
 
+	/// contains handler or not
+	pub fn contains(&self, name: &str) -> bool {
+		self.inner.contains(name)
+	}
+
 	/// Add a route (name, handler function) to the builder
 	///
 	/// ```
